@@ -8,14 +8,15 @@ const http = require('http').Server(app);
 const PORT = 4000
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "http://localhost:3000"
+        //origin: "http://localhost:3000"
     }
 });
 
 app.use(cors())
 let users = []
 var Count=0;
-var URL="http://localhost/teenpatti/api/";
+//var URL="http://localhost/teenpatti/api/";
+var URL="http://www.sgtdigiworld.com/teenpatti/api/";
 var DrCount=0;
 var TiCount=0;
 var TrCount=0;
