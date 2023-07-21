@@ -415,7 +415,7 @@ socketIO.on('connection', (socket) => {
     console.log(`⚡: ${socket.id} user just connected!`) 
     Count++;
     console.log(Count); 
-    socketIO.emit("GetCount",Count);
+    socketIO.emit("GetCount",300+Count);
    
     socket.on("message", data => {
       socketIO.emit("messageResponse", data)
